@@ -31,7 +31,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import codePush from 'react-native-code-push';
 import Config from 'react-native-config';
 import QRCode from 'react-native-qrcode-svg';
-import QRCodeScanner from 'react-native-qrcode-scanner';
+// import QRCodeScanner from 'react-native-qrcode-scanner';
 // import TabViewExample from './TabViewExample';
 // import SwiperComponent from './SwiperComponent';
 // import ScreenOrientation from './ScreenOrientation';
@@ -92,6 +92,7 @@ class App extends React.Component {
 
   render() {
     // const { isModalVisible } = this.state;
+
     const { navigation } = this.props;
     return (
       <>
