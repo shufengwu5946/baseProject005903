@@ -31,6 +31,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import codePush from 'react-native-code-push';
 import Config from 'react-native-config';
 import QRCode from 'react-native-qrcode-svg';
+import Spinner from 'react-native-loading-spinner-overlay';
 // import QRCodeScanner from 'react-native-qrcode-scanner';
 // import TabViewExample from './TabViewExample';
 // import SwiperComponent from './SwiperComponent';
@@ -45,6 +46,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       isModalVisible: false,
+      spinner: false,
     };
   }
 
@@ -94,8 +96,14 @@ class App extends React.Component {
     // const { isModalVisible } = this.state;
 
     const { navigation } = this.props;
+    const { spinner } = this.state;
     return (
       <>
+        <Spinner
+          visible={spinner}
+          textContent="Loading..."
+          textStyle={styles.spinnerTextStyle}
+        />
         <StatusBar barStyle="dark-content" />
         <SafeAreaView>
           <ScrollView
@@ -208,6 +216,44 @@ class App extends React.Component {
                 colors={['#4c669f', '#3b5998', '#192f6a']}
                 style={styles.linearGradient}>
                 <Text style={styles.buttonText}>扫码</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('mySectionList');
+              }}>
+              <LinearGradient
+                colors={['#4c669f', '#3b5998', '#192f6a']}
+                style={styles.linearGradient}>
+                <Text style={styles.buttonText}>SectionList</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('myCalendar');
+              }}>
+              <LinearGradient
+                colors={['#4c669f', '#3b5998', '#192f6a']}
+                style={styles.linearGradient}>
+                <Text style={styles.buttonText}>日历</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              onPress={() => {
+                this.setState({ spinner: true });
+                setTimeout(() => {
+                  this.setState({
+                    spinner: false,
+                  });
+                }, 3000);
+              }}>
+              <LinearGradient
+                colors={['#4c669f', '#3b5998', '#192f6a']}
+                style={styles.linearGradient}>
+                <Text style={styles.buttonText}>loading</Text>
               </LinearGradient>
             </TouchableOpacity>
           </ScrollView>
