@@ -1726,7 +1726,7 @@ balanced-match@^1.0.0:
   resolved "https://registry.npm.taobao.org/balanced-match/download/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-base-64@0.1.0:
+base-64@0.1.0, base-64@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npm.taobao.org/base-64/download/base-64-0.1.0.tgz#780a99c84e7d600260361511c4877613bf24f6bb"
   integrity sha1-eAqZyE59YAJgNhURxId2E78k9rs=
@@ -7531,10 +7531,10 @@ react-native-deep-link@^0.2.9:
     route-parser "0.0.5"
     url-parse "^1.2.0"
 
-react-native-device-info@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.npm.taobao.org/react-native-device-info/download/react-native-device-info-2.3.2.tgz#db2b8f135aaf2515583e367ab791dcc7d2f0d14c"
-  integrity sha1-2yuPE1qvJRVYPjZ6t5Hcx9Lw0Uw=
+react-native-device-info@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.npm.taobao.org/react-native-device-info/download/react-native-device-info-3.1.4.tgz#58a1d465ce9e2c28809132b1c68dd7ec7ce5f00f"
+  integrity sha1-WKHUZc6eLCiAkTKxxo3X7Hzl8A8=
 
 react-native-elements@^1.1.0:
   version "1.1.0"
@@ -7548,6 +7548,14 @@ react-native-elements@^1.1.0:
     prop-types "^15.5.8"
     react-native-ratings "^6.3.0"
     react-native-status-bar-height "^2.2.0"
+
+react-native-fs@^2.14.1:
+  version "2.14.1"
+  resolved "https://registry.npm.taobao.org/react-native-fs/download/react-native-fs-2.14.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-native-fs%2Fdownload%2Freact-native-fs-2.14.1.tgz#61c70a865b5b5bcb020dd4e4befd60a2c20c836f"
+  integrity sha1-YccKhltbW8sCDdTkvv1gosIMg28=
+  dependencies:
+    base-64 "^0.1.0"
+    utf8 "^2.1.1"
 
 react-native-gesture-handler@^1.4.1:
   version "1.4.1"
@@ -9689,6 +9697,11 @@ use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.npm.taobao.org/use/download/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha1-1QyMrHmhn7wg8pEfVuuXP04QBw8=
+
+utf8@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.npm.taobao.org/utf8/download/utf8-2.1.2.tgz#1fa0d9270e9be850d9b05027f63519bf46457d96"
+  integrity sha1-H6DZJw6b6FDZsFAn9jUZv0ZFfZY=
 
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"

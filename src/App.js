@@ -256,6 +256,16 @@ class App extends React.Component {
                 <Text style={styles.buttonText}>loading</Text>
               </LinearGradient>
             </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('my');
+              }}>
+              <LinearGradient
+                colors={['#4c669f', '#3b5998', '#192f6a']}
+                style={styles.linearGradient}>
+                <Text style={styles.buttonText}>我的</Text>
+              </LinearGradient>
+            </TouchableOpacity>
           </ScrollView>
         </SafeAreaView>
       </>

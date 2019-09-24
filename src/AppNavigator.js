@@ -3,6 +3,7 @@ import App from './App';
 import QRCode from './QRCode';
 import MySectionList from './MySectionList';
 import MyCalendar from './MyCalendar';
+import My from './My';
 
 const AppNavigator = createStackNavigator(
   {
@@ -10,6 +11,7 @@ const AppNavigator = createStackNavigator(
     qrCode: QRCode,
     mySectionList: MySectionList,
     myCalendar: MyCalendar,
+    my: My,
   },
   {
     initialRouteName: 'app',
