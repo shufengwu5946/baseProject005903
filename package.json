@@ -48,7 +48,7 @@
     "js-sha3": "^0.8.0",
     "lodash": "^4.17.15",
     "micromatch": "^4.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-duration-format": "^2.3.2",
     "parse-srt": "^1.0.0-alpha",
     "password-validator": "^4.1.2",
